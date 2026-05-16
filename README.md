@@ -44,7 +44,7 @@ agriconnect-platform/
 │   └── request-card.tsx            # Data-bound component layout for items
 └── utils/
     └── mock-data-factory.ts        # Dynamic helper functions for mock record generation
-
+```
 ## 3. Mock Data Design & Component Layout
 ```text
 {
@@ -55,7 +55,8 @@ agriconnect-platform/
   "status": "string ('Pending' | 'Accepted')",
   "timestamp": "string (ISO 8601 or formatted string representation of request arrival)"
 }
-
+```
+```text
 +-----------------------------------------------------------------------------------+
 |                                AGRI-CONNECT DASHBOARD                             |
 +---------------------------------------------------+-------------------------------+
@@ -75,3 +76,4 @@ agriconnect-platform/
 +---------------------------------------------------+-------------------------------+
 | (Simulated Worker Thread: Appending real-time stream data dynamically...)        |
 +-----------------------------------------------------------------------------------+
+```
