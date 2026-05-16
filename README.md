@@ -44,3 +44,34 @@ agriconnect-platform/
 │   └── request-card.tsx            # Data-bound component layout for items
 └── utils/
     └── mock-data-factory.ts        # Dynamic helper functions for mock record generation
+
+## 3. Mock Data Design & Component Layout
+```text
+{
+  "id": "string | number (Unique transactional identifier used for indexing)",
+  "farmerName": "string (The name of the producer submitting the crop availability)",
+  "produce": "string (The specific crop type or inventory item requested)",
+  "quantity": "number (The volumetric count or units requested for allocation)",
+  "status": "string ('Pending' | 'Accepted')",
+  "timestamp": "string (ISO 8601 or formatted string representation of request arrival)"
+}
+
++-----------------------------------------------------------------------------------+
+|                                AGRI-CONNECT DASHBOARD                             |
++---------------------------------------------------+-------------------------------+
+| PENDING REQUESTS                                  | ACCEPTED REQUESTS             |
++---------------------------------------------------+-------------------------------+
+| [ Card #102 ]                                     | [ Card #101 ]                 |
+| Farmer: Juan Dela Cruz                            | Farmer: Maria Santos          |
+| Produce: Rice Premium (50 bags)                   | Produce: Yellow Corn (25 bags)|
+| Time: 16:15:30                                    | Status: [ ✓ ACCEPTED ]        |
+| Action: [ ACCEPT REQUEST ]                        |                               |
+|                                                   |                               |
+| [ Card #103 ]                                     |                               |
+| Farmer: Antonio Reyes                             |                               |
+| Produce: Red Onions (10 crates)                   |                               |
+| Time: 16:18:02                                    |                               |
+| Action: [ ACCEPT REQUEST ]                        |                               |
++---------------------------------------------------+-------------------------------+
+| (Simulated Worker Thread: Appending real-time stream data dynamically...)        |
++-----------------------------------------------------------------------------------+
