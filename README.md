@@ -1,6 +1,4 @@
-# agriconnect-dashboard-design
-
-# AgriConnect – Advanced Technical Design & Architecture Specification
+# AgriConnect – Technical Design & Architecture Specification
 
 This repository contains the conceptual system architecture, frontend organization, mock-data structures, state management flow, real-time update simulation, and testing strategies for the **AgriConnect High-Concurrency Agricultural Supply Chain Platform**.
 
